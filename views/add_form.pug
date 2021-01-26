@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title = "Add Person"
+   body
+       form(method="post" action="/newPerson")
+        p Id:
+        input(type="text" name="Id" placeholder="")
+        p FirstName:
+        input(type="text" name="firstName" placeholder="")
+        p LastName:
+        input(type="text" name="lastName" placeholder="")
+        p Address:
+        input(type="text" name="address" placeholder="")
+        p City:
+        input(type="text" name="city" placeholder="")
+        p Submit:
+        button(type="submit") Add Person
+        

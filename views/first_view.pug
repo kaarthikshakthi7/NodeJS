@@ -1,0 +1,23 @@
+doctype html
+html
+   head
+      title = "Hello Pug"
+   body
+      form(method="get" action="/addData")
+            button(type="submit") Add 
+      table(width='100%', cellspacing='0', cellpadding='0', border='0', bgcolor='#F2F2F2')
+        thead
+            tr
+              th id
+              th firstName
+              th lastName
+              th address
+              th city
+        tbody
+          each task in persons.result
+              tr
+                td #{task.PersonID}
+                td #{task.LastName}
+                td #{task.FirstName}
+                td #{task.Address}
+                td #{task.City}
